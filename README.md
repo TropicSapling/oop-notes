@@ -13,3 +13,11 @@
 - `package <mapp>`, `<mapp>` ska vara mappen/path programmet ligger i
 - `int / int` => heltalsdivision
   - använd cast `(double)` för vanlig division
+
+---
+
+- `rand.nextInt(100)` inkluderar ej 100, d.v.s. ger tal 0 t.o.m. 99
+- konvention: `nGuesses` för number of guesses
+- `x = n` return:ar `n`
+- `str == str2` kollar *adresserna*, inte värdena!
+  - använd `str.equals(str2)` istället
