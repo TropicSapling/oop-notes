@@ -6,6 +6,8 @@
 - `nextInt()` läser bara Int från strömmen, behåller kvar `\n` i strömmen!
   - kan bli problematiskt om man läser in String senare
 
+---
+
 - Program struktur: Först input, sedan "Process" (non-IO), sist output
 - IntelliJ: Alt+Enter under hover => import suggestion
 - `package <mapp>`, `<mapp>` ska vara mappen/path programmet ligger i
