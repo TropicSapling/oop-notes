@@ -21,3 +21,6 @@
 - `x = n` return:ar `n`
 - `str == str2` kollar *adresserna*, inte värdena!
   - använd `str.equals(str2)` istället
+- `{}` syntax for arrays
+  - `int[] arr = {1, 2};` eller `int[] arr; arr = new int[]{1, 2};`
+  - fixed size
