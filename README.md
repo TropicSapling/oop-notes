@@ -33,3 +33,8 @@
   - `exit()` i slutet av `test` funktionen så att programmet slutar köra efter test
   - `test` funktionen printar (helst) flera property results (true|false)
   - behåll denna funktionen, men du behöver inte alltid köra den
+- Classes är lite som structs
+  - Om man har `class Player {...}` initierar `Player p1 = new Player()` en ny Player
+    - innehåller default data (0, null, etc.) om man inte har en initierare
+  - `class Player {... Player(...) {...} ...}` tillåter `new Player(...)`
+    - t.ex. `Player(String n, int p) {name = n; points = p}` tillåter `new Player("Olle", 3)`
