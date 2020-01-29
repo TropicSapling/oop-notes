@@ -56,3 +56,18 @@
 ---
 
 - IntelliJ: `class`: right-click -> generate -> constructure -> ...
+- Pen&Paper: lär dig rita "Before" & "After" diagram
+  - vad pekar variabler på, vilka värden har de, before & after
+  - rita variabler som "lådor"
+    - pekare blir lådor med en pil inuti som dras till något
+    - array är pekare i låda till en rad av lådor sammankopplade
+
+---
+
+- Primitiva typer är non-pointer, non-primitive är pointer (till objekt)
+- String literals, i.e. `"hello"` är typ "anonyma" objekt
+- Note: `s1 = "zzz"; s2 = "zzz"` optimeras till `s1 = "zzz"` så att `s1 == s2` => `s1 == s1`!
+- `arr = null; arr[i]` => **N**ull **P**ointer **E**xception
+- Automatisk deref i Java
+  - Behövs inte `*`
+  - Ingen pointer arithmetic, allt är implicit
