@@ -38,3 +38,19 @@
     - innehåller default data (0, null, etc.) om man inte har en initierare
   - `class Player {... Player(...) {...} ...}` tillåter `new Player(...)`
     - t.ex. `Player(String n, int p) {name = n; points = p}` tillåter `new Player("Olle", 3)`
+ 
+## Lecture 4
+- Fokusera på läsbarhet över performance
+  - performance är ej ett krav i kursen
+- Alla .class filer börjar med hex `CA FE BA BE` för att markera att det är bytecode
+- Man kan skriva ints med underscore `1_000_000` syntax
+- Med arrays kopieras referenser/adresser
+  - Samma med cmp: `arr == arr2` jmf. endast adresserna!
+- Referenser pekar alltid på objekt i Java
+  - Kan ej peka på andra variabler som i C(++), Rust, etc.
+- `final int[] arr` gör *adressen* const, inte själva `arr`!
+- `new Object` blir en pekare till ett nytt `Objekt`
+- `this` pekar på objektet man är i
+  - t.ex. `this.name = name`: VL = objektets name, HL = input name
+
+- IntelliJ: `class`: right-click -> generate -> constructure -> ...
