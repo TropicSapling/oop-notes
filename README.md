@@ -60,7 +60,8 @@
   - vad pekar variabler på, vilka värden har de, before & after
   - rita variabler som "lådor"
     - pekare blir lådor med en pil inuti som dras till något
-    - array är pekare i låda till en rad av lådor sammankopplade
+    - array är pekare i låda till en ruta med en rad av lådor sammankopplade inuti
+  - Operationer görs i mitten mellan "Before" och "After", separerat med linjer
 
 ---
 
