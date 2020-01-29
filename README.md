@@ -53,4 +53,6 @@
 - `this` pekar på objektet man är i
   - t.ex. `this.name = name`: VL = objektets name, HL = input name
 
+---
+
 - IntelliJ: `class`: right-click -> generate -> constructure -> ...
