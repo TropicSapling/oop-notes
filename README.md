@@ -72,3 +72,19 @@
 - Automatisk deref i Java
   - Behövs inte `*`
   - Ingen pointer arithmetic, allt är implicit
+
+## Lecture 5
+- javac läser bara första raden av dekl/init innan den läser resten
+  - så att man kan använda funktioner innan de är definierade
+  - t.ex. läser `void program() {<program body>} void swap(...) {...}` först, sedan deras function bodys
+    - `<program body>` kan t.ex. då innehålla `swap(...)`
+  - inte direkt användbart för kursen men bra om du ska skriva en egen kompilator
+  - notera att det här endast fungerar eftersom man bara kan köra kod inuti en funktion hela tiden
+
+---
+
+- Fisher-Yates shuffling
+  - `for(int i = arr.length; i > 1; i--)`
+  - Slumpa index j (`rand.nextInt(i)`), byt plats: `arr[j]` och `arr[i - 1]`
+  - Slumpa index j igen, byt plats: `arr[j]` och `arr[i - 1]`
+  - osv.
