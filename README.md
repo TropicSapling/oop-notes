@@ -88,3 +88,33 @@
   - Slumpa index j (`rand.nextInt(i)`), byt plats: `arr[j]` och `arr[i - 1]`
   - Slumpa index j igen, byt plats: `arr[j]` och `arr[i - 1]`
   - osv.
+
+## Lecture 5+?
+- `enum Enum { E1, E2, ...}`, `Enum e = Enum.E2`
+- Enums också referenser som klasser, men:
+  - varje "item" (t.ex. `E1`) är en referens till ett unikt objekt
+  - betyder att man fortfarande kan göra `e == Enum.E2` eftersom `e` och `Enum.E2` är samma referens
+- `Integer`, `Double`, etc. är "boxed" ints/doubles
+  - d.v.s. referenser till ints/doubles
+- Boxing & unboxing brukar ske automatiskt, men `==` är ett undantag
+  - t.ex. `Integer i = 4; i++` boxar först 4 och sedan unboxar (deref) den i för att öka 4 till 5
+  - `>=`, `<=`, `>`, etc. fixar fortfarande unboxing
+  - `d1 == 1 * d2` unboxar också... så lite jobbigt som i JS tydligen ;-;
+- **NOTE:** Optimisering i Java: Alla Integer objekt med värde under 128 är samma objekt
+  - d.v.s. `Integer i = 127; Integer j = 127; i == j // true`
+
+---
+
+- Finns function overloading i Java
+  - t.ex. `int f(int i) {...}` och `double f(double d)` kan både finnas
+  - måste skilja i parametrarna, inte endast return-type
+    - return-type kan dessutom vara samma så länge pars skiljer
+
+---
+
+- Generic methods
+  - `<T> void shuffle(T[] arr) {...}`
+  - T = any ref type
+- (type inference kan sägas "typ-härledning" på svenska)
+- "Operator > not defined for T"
+  - solve using `<T extends Comparable<T>>`
