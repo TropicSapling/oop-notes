@@ -118,3 +118,18 @@
 - (type inference kan sägas "typ-härledning" på svenska)
 - "Operator > not defined for T"
   - solve using `<T extends Comparable<T>>`
+
+---
+
+- Super & subtyper:
+  - sub < super
+    - t.ex. int: sub < double: super
+      - "double = int|fraction"
+  - subtyper har fler operationer än supertyper
+    - alltså mer specialiserade, medan super är mer generell
+  - type cast kan endast göra när det finns sub-super relation
+    - i.e. `1 == (int) true` funkar inte
+  - `Objekt` är super till allt
+- ClassCastException (runtime)
+- If `S <: T`, then `S[] <: T[]`
+  - Problematiskt: `Object os = new Integer[]; os[0] = 4.5` - kompilerar men runtime exception!
