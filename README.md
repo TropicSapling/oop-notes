@@ -18,7 +18,7 @@
 
 - `rand.nextInt(100)` inkluderar ej 100, d.v.s. ger tal 0 t.o.m. 99
 - konvention: `nGuesses` för number of guesses
-- `x = n` return:ar `n`
+- assignment `var = val` return:ar `val`
 - `str == str2` kollar *adresserna*, inte värdena!
   - använd `str.equals(str2)` istället
 - `{}` syntax for arrays
@@ -89,7 +89,7 @@
   - Slumpa index j igen, byt plats: `arr[j]` och `arr[i - 1]`
   - osv.
 
-## Lecture 5+?
+## Lecture 5+n
 - `enum Enum { E1, E2, ...}`, `Enum e = Enum.E2`
 - Enums också referenser som klasser, men:
   - varje "item" (t.ex. `E1`) är en referens till ett unikt objekt
@@ -115,6 +115,7 @@
 - Generic methods
   - `<T> void shuffle(T[] arr) {...}`
   - T = any ref type
+    - only ref types because byte, int, double, etc. different sizes while all ref types are 32/64-bit
 - (type inference kan sägas "typ-härledning" på svenska)
 - "Operator > not defined for T"
   - solve using `<T extends Comparable<T>>`
@@ -133,3 +134,9 @@
 - ClassCastException (runtime)
 - If `S <: T`, then `S[] <: T[]`
   - Problematiskt: `Object os = new Integer[]; os[0] = 4.5` - kompilerar men runtime exception!
+
+## Lecture 5+n+1
+- Java fixar `.f()` om du gör `f(...) {...}` i class (ingen `self` behövs)
+- Om du `return obj` i funktion kan du göra chaining: `obj.f().g().h()`
+- Generic class: `class Class<T>`
+- for in: `for(<type> item : arr)`
