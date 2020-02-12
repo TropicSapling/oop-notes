@@ -140,3 +140,11 @@
 - Om du `return obj` i funktion kan du göra chaining: `obj.f().g().h()`
 - Generic class: `class Class<T>`
 - for in: `for(<type> item : arr)`
+
+---
+
+- `Character c = 'x'`
+- `Character.isWhitespace(' ') == true`
+- `StringBuilder` tillåter modifiering av String, t.ex. med `.append(...)`
+  - alltså vanlig String är immutable
+- `obj.toString()` is automatically called on obj print if defined
