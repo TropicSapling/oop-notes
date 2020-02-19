@@ -170,3 +170,7 @@
 
 - (Interface) Typen (VL) anger vilka operationer som är tillåtna; inte värdet
   - så t.ex. `Object[] arr = {1, 2, 3}` tillåter inte `arr[0]++` för `++` finns ej för `Object[]`
+
+---
+
+- Unified Modelling Language
