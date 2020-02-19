@@ -148,3 +148,22 @@
 - `StringBuilder` tillåter modifiering av String, t.ex. med `.append(...)`
   - alltså vanlig String är immutable
 - `obj.toString()` is automatically called on obj print if defined
+
+## Lecture 5+n+3
+- Finns inga vanliga funktioner i Java, bara metoder
+  - Alla tillhör objekt/klasser, men om man vill använda en metod inuti samma klass kan man skippa `this.` och bara skriva funktionsnamnet
+- `list.removeIf(e -> cond)` - bra sätt att ta bort saker från lista
+- `Collections` innehåller `shuffle`, `sort`, etc.
+- HashMap fungerar genom att man genererar `hashCode()` från input string, vilket är ett heltal som är index i en lista.
+  - T.ex. `hashmap.get("Nisse")` skulle kunna generare hashCode 97 och därför leta på index 97 efter "Nisse" entry.
+  - Alla Object har hashCode, eftersom man kan ha andra objekt än String som keys
+
+---
+
+- Alla klasser `extends Object` även om det inte skrivs ut, så man har tillgång till Object metoder
+- Kan inte anropa constructors inuti egna klassen, använd `this(arg1, arg2, ...)` istället
+- T.sk. från Rust är instansvariabler public by default, så använd `private` när det behövs
+- Getters & Setters
+  - Vissa IDEs kan generera
+
+
