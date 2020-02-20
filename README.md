@@ -174,3 +174,7 @@
 ---
 
 - Unified Modelling Language
+
+## Lecture 5+n+4
+- Bra att separera CLI från själva spelet, t.ex. ha CLI class och Game class
+- Constructor for Game => easier to start different variants of Game (i.e. different amount of players)
