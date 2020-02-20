@@ -178,3 +178,18 @@
 ## Lecture 5+n+4
 - Bra att separera CLI från själva spelet, t.ex. ha CLI class och Game class
 - Constructor for Game => easier to start different variants of Game (i.e. different amount of players)
+
+---
+
+- **static:** a *static* variable is shared across instances of a class
+  - i.e. `private static int i;` in class `Class` => `(new Class()).i == (new Class()).i`
+  - changing the variable in one instance of the class changes it for every instance
+- Klasser sparas i RAM efter kompilering
+  - `static` variabler pekar på en "klassvariabel" inuti klassen i RAM
+  - (klassinstanser sparas också på ett annat ställe i RAM)
+- `static` variabler laddas vid klassladdning istället för instansladdning
+  - alltså laddas/skapas de bara en gång istället för varje instans (förutom referensen till klassvariabeln såklart)
+- `static` methods kan anropas med `Class.method(...)` istället för `(new Class(...)).method(...)`
+  - dessa metoder finns också i själva klassen
+  - **note:** klassmetoder kan *inte* använda instansvariabler (för de kan ju variera från instans till instans)
+- `public static void main(...)`: måste vara `static` för när programmet laddas finns inga instanser än; metoden kan bara kommas åt via klassen
