@@ -193,3 +193,13 @@
   - dessa metoder finns också i själva klassen
   - **note:** klassmetoder kan *inte* använda instansvariabler (för de kan ju variera från instans till instans)
 - `public static void main(...)`: måste vara `static` för när programmet laddas finns inga instanser än; metoden kan bara kommas åt via klassen
+
+## Lecture 5+n+5
+- Checked exceptions kontrolleras compile-time
+  - Alltså lite som i Rust, fast mycket jobbigare att hantera (throw-try-catch hela tiden)
+- Om man inte hanterar error i en metod måste man göra `throws Exception` efter funktionsnamnet (inkl. args)
+  - i.e. `readFile(Path path) throws IOException`
+
+---
+
+- OOP: Försök minska beroende (dependencies)
