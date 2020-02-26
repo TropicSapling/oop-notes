@@ -218,6 +218,8 @@
   - Overload: Kompilatorn checkar med typen (`**Super** s = new Sub()`)
   - Override: Runtime checkar med själva objektet (`Super s = **new Sub()**`)
   - kolla `O4OverrideVsOverload.java` exempel-filen
+- `this` är själva objektet som skapats
+  - så som `B extends A` och vi gör `A a = new B()` och sedan `b.returnThis()` får vi ut instansen av `B`
 
 ---
 
