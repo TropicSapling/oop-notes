@@ -207,3 +207,6 @@
   - i.e. `class Pet`, `class [Dog|Cat] extends Pet`
   - `super(...)` inuti Dog/Cat anropar `Pet(...)`
     - behövs för vissa variabler finns nu i Pet, så vi behöver göra `public Cat(...) { super(...); this.uniqueVar = val; }`
+- `null` är sub till allt (jmf. `new Object()` super till allt)
+- `SubClass [implements|extends] SuperClass`
+- Interfaces can cast:as utan super-sub, så t.ex. `interface1Impl = (Interface1) interface2Impl` funkar (men kan ge runtime error)
