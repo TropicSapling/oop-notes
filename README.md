@@ -203,3 +203,7 @@
 ---
 
 - OOP: Försök minska beroende (dependencies)
+- Gemensama metoder & variabler till *basklass*
+  - i.e. `class Pet`, `class [Dog|Cat] extends Pet`
+  - `super(...)` inuti Dog/Cat anropar `Pet(...)`
+    - behövs för vissa variabler finns nu i Pet, så vi behöver göra `public Cat(...) { super(...); this.uniqueVar = val; }`
