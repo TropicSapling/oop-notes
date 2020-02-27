@@ -233,3 +233,7 @@
 - `abstract class`: förhindrar construction av klassen utanför subklasser
   - användbart t.ex. om man inte vill tillåta `new Pet(...)` men fortfarande `new Cat(...)` (`Pet` är då `abstract`)
   - tillåter också att man impl i subklasserna fast ändå har `AbstractClass implements ...`
+- `Class::method` skapar en referens till ett anonymt objekt som innehåller metoden
+  - `Class` kan vara `this` för denna klassen
+  - i princip method references, så användbart för callbacks
+  - **note:** annorlunda syntax, t.ex. `callback.accept(...)` istället för bara `callback(...)`
