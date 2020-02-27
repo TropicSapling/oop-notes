@@ -226,3 +226,10 @@
 - Flödesschema-ish:
   - `extends`: pil med ihåligt pilhuvud som pekar mot super
   - `implements`: samma som `extends` fast pilen är streckad
+
+## Lecture 5+n+6
+- `static` + `@Override` funkar inte (p.g.a. att `@Override` checkas runtime per objekt snarare än per klass)
+  - blir shadowing istället om man ändå har samma metoder
+- `abstract class`: förhindrar construction av klassen utanför subklasser
+  - användbart t.ex. om man inte vill tillåta `new Pet(...)` men fortfarande `new Cat(...)` (`Pet` är då `abstract`)
+  - tillåter också att man impl i subklasserna fast ändå har `AbstractClass implements ...`
