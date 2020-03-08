@@ -31,6 +31,7 @@
 - Tydligen kan man bara hålla 7 +- 2 fakta i arbetsminnet samtidigt enligt läraren?
 - Gör test() som testar funktioner
   - `exit()` i slutet av `test` funktionen så att programmet slutar köra efter test
+    - behövs bara om `test()` körs innanför programmet
   - `test` funktionen printar (helst) flera property results (true|false)
   - behåll denna funktionen, men du behöver inte alltid köra den
 - Classes är lite som structs
