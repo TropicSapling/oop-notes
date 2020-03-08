@@ -211,7 +211,7 @@
 - `null` är sub till allt (jmf. `new Object()` super till allt)
 - `SubClass [implements|extends] SuperClass`
 - Interfaces can cast:as utan super-sub, så t.ex. `interface1Impl = (Interface1) interface2Impl` funkar (men kan ge runtime error)
-- `class B extands A implements IX, IY` funkar
+- `class B extends A implements IX, IY` funkar
   - impl flera interface finns, men går *inte* att göra `extends` flera gånger (förutom att allt `extends Object` by default)
 - `obj instanceof Class`: `true` om `obj` är sub till `Class`
   - kollar under runtime
