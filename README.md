@@ -238,3 +238,13 @@
   - `Class` kan vara `this` för denna klassen
   - i princip method references, så användbart för callbacks
   - **note:** annorlunda syntax, t.ex. `callback.accept(...)` istället för bara `callback(...)`
+
+## Last Lecture (extra)
+- Gör inget om man göra några små fel på tentan eller inte skriver exakt Java
+  - fokus på logik, problemlösning snarare än syntax
+- De bedömmer ca. 15 min. per fråga
+  - Om de inte hinner får man 0p och "?" först men kan förklara för läraren och få poängen sen ändå
+- Brukar inte krävas mer än 20 rader per deluppgift
+- Man får bara använda appendix-metoder på vissa uppgifter
+- **Glöm ej:** Heltalsdivision vs. double division!
+- Integer, Double, etc. unboxas vid `==` endast om minst en av VL & HL är en unboxed/primitive value
