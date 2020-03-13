@@ -134,7 +134,7 @@
   - `Objekt` är super till allt
 - ClassCastException (runtime)
 - If `S <: T`, then `S[] <: T[]`
-  - Problematiskt: `Object[] os = new Integer[]; os[0] = 4.5` - kompilerar men runtime exception!
+  - Problematiskt: `Object[] os = new Integer[123]; os[0] = 4.5` - kompilerar men runtime exception!
 
 ## Lecture 5+n+1
 - Java fixar `.f()` om du gör `f(...) {...}` i class (ingen `self` behövs)
